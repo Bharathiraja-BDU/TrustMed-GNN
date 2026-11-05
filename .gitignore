@@ -1,0 +1,32 @@
+# Python temporary files
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Model checkpoints and embeddings
+*.pt
+*.pth
+*.npy
+
+# Raw and frozen datasets
+baseline_medalign/data/
+data/frozen/
+
+# Unapproved candidate-level records
+*_NOT_APPROVED.csv
+*_NOT_APPROVED.json
+*_NOT_APPROVED.jsonl
+*_UNFILTERED.csv
+
+# Detailed prediction outputs
+results/phase1_mc_dropout_full/validation_predictions.csv
+results/phase1_mc_dropout_smoke/validation_predictions.csv
+results/phase2b_calibration_fusion/phase2b_predictions.csv
+results/phase3_selective_prediction/phase3_decisions.csv
+
+# Temporary local files
+github_upload_preview.txt
+project_files.txt
+pillow_test.png
